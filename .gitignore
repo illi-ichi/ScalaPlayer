@@ -1,0 +1,8 @@
+.idea
+.idea_modules
+target
+build
+build.log
+tmp
+._*
+.DS_Store
