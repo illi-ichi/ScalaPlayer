@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <id>com.scala.player</id>
+    <id>com.obsidian.player</id>
     <name>ScalaPlayer</name>
     <version>1.0</version>
     <publisher>aoprisan</publisher>
@@ -11,7 +11,7 @@
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
-    <guid>5c809da4-18b8-4c10-95fa-3b0944ea43af</guid>
+    <guid>0ee60a86-1479-44e2-b5f2-9ea3d3b76b9d</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
