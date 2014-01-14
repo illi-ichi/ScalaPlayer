@@ -2,7 +2,7 @@
 function ApplicationWindow() {
 	//load component dependencies
 	Ti.include('ui/common/scala-player-extdeps.js');
-	Ti.include('ui/common/scala-player-opt.js');
+	Ti.include('ui/common/scala-player.js');
 
 	//create component instance
 	var self = Ti.UI.createWindow({
