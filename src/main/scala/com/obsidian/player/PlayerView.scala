@@ -3,6 +3,7 @@ package com.obsidian.player
 import scala.scalajs.js
 import js.Dynamic.{ global => g }
 import org.scalajs.dom
+import scala.scalajs.js.annotation.JSBracketAccess
 
 object FromGlobal extends js.GlobalScope {
     def alert(msg:String):Unit = ???
@@ -13,11 +14,12 @@ object PlayerView {
   def init():View = {
     val view = FromGlobal.Ti.UI.createView()
     val label = FromGlobal.Ti.UI.createLabel()
+    val opts = js.Dictionary()
     label.text = "Player View"
     label.color = "blue"
     label.height = "auto"
     label.width = "auto"
-    label.addEventListener("click", (e:dom.Event) => FromGlobal.alert("Event: " + e.`type`.toString))
+    label.addEventListener("click", (e:dom.Event) => FromGlobal.Ti.Media.openMusicLibrary(opts))
     view.add(label)
     view
   }
@@ -38,6 +40,15 @@ object DynamicView {
 
 trait Ti extends js.Object {
   val UI:UI = ???
+  val Media:Media = ???
+  val API:API = ???
+}
+
+trait API extends js.Object {
+}
+
+trait Media extends js.Object {
+  def openMusicLibrary(options:js.Dictionary):Unit = ???
 }
 
 trait UI extends js.Object {

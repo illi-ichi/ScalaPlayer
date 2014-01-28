@@ -1,1 +1,1 @@
-Object['MainView'] = ScalaJS.modules.com_obsidian_player_PlayerView().init;
+ScalaPlayerMainView = ScalaJS.modules.com_obsidian_player_PlayerView().init;

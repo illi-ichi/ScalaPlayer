@@ -1,6 +1,7 @@
 //Application Window Component Constructor
 function ApplicationWindow() {
 	//load component dependencies
+	Ti.include('ui/common/global.js');
 	//Ti.include('ui/common/scala-player-extdeps.js');
 	//Ti.include('ui/common/scala-player.js');
 	Ti.include('ui/common/scala-player-opt.js');
@@ -11,8 +12,7 @@ function ApplicationWindow() {
 	});
 
 	//construct UI
-	//var mainView = new ScalaJS.modules.com_obsidian_player_PlayerView().init();
-	var mainView = Object.MainView();
+	var mainView = ScalaPlayerMainView();
 	self.add(mainView);
 	return self;
 }
