@@ -19,7 +19,8 @@ object PlayerView {
     label.color = "blue"
     label.height = "auto"
     label.width = "auto"
-    label.addEventListener("click", (e:dom.Event) => FromGlobal.Ti.Media.openMusicLibrary(opts))
+    //label.addEventListener("click", (e:dom.Event) => FromGlobal.Ti.Media.openMusicLibrary(opts))
+    label.addEventListener("click", (e:dom.Event) => FromGlobal.alert("Hi! This is test."))
     view.add(label)
     view
   }

@@ -12,7 +12,7 @@ function ApplicationWindow() {
 	});
 
 	//construct UI
-	var mainView = ScalaPlayerMainView();
+	var mainView = Object.ScalaPlayerMainView();
 	self.add(mainView);
 	return self;
 }
