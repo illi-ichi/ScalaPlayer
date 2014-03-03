@@ -14,7 +14,7 @@ object PlayerView {
   def init():View = {
     val view = FromGlobal.Ti.UI.createView()
     val label = FromGlobal.Ti.UI.createLabel()
-    val opts = js.Dictionary()
+    val opts = js.Dictionary[String]()
     label.text = "Player View"
     label.color = "blue"
     label.height = "auto"
@@ -48,7 +48,7 @@ trait API extends js.Object {
 }
 
 trait Media extends js.Object {
-  def openMusicLibrary(options:js.Dictionary):Unit = ???
+  def openMusicLibrary(options:js.Dictionary[String]):Unit = ???
 }
 
 trait UI extends js.Object {
